@@ -9,18 +9,23 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+   <style>
+     #nav-bar{
+       top: 0;
+       position: fixed;
+     }
+     #form{
+       display: flex;
+       flex-direction: row;
+     }
+     @media (max-width: 600px) {
+      #form{
+       display: flex;
+       flex-direction: column;
+     }
+     }
 
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+   </style>
 
     <header id="header">
       <img
@@ -48,8 +53,10 @@
       ></iframe>
     </section>
     <section id="section2">
-      <form action="#" id="form">
-        <input type="email" id="email" placeholder="Enter email" />
+      
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" id="email" placeholder="Enter email" name="email" required/>
+        <input type="submit" value="Submit" id="submit">
       </form>
     </section>
     <section id="section3"></section>
